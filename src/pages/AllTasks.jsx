@@ -22,7 +22,7 @@ const AllTasks = () => {
         {taskData.map((task)=>{
           const {_id,description,tag,taskTitle} = task
           return(
-            <div key={_id} className='border-[#B8B6B6] border-[0.5px] rounded-[10px] py-6 px-3 '>
+            <div key={_id} className='border-[#B8B6B6] w-full border-[0.5px] rounded-[10px] py-6 px-3 '>
               <MappedTasks taskTitle={taskTitle} _id={_id} description = {description} tag={tag} />
             </div>
           )
